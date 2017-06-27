@@ -4,6 +4,7 @@ from django.contrib import admin
 
 from . import views
 
+app_name = 'polls'
 urlpatterns = [
     # ex: /polls/
     url(r'^$', views.index, name='index'),
