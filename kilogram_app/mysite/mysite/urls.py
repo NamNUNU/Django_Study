@@ -19,6 +19,9 @@ from kilogram import views as kilogram_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', kilogram_views.IndexView.as_view(), name='root')
-    url(r'^kilogram/', include('killogram.urls')),
+    url(r'^$', kilogram_views.IndexView.as_view(), name = 'root'),
+    url(r'^kilogram/', include('kilogram.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/signup$', kilogram_views.CreateUserView.as_view(), name = 'signup'),
+    url(r'^accounts/signup/done$', kilogram_views.RegisteredView.as_view(), name = 'create_user_done'),
 ]
