@@ -124,6 +124,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_REDIRECT_URL = '/kilogram/'
 
 #media_url
-MEDIA_URL = '/files'
+MEDIA_URL = '/files/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
 
