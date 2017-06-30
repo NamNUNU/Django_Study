@@ -1,0 +1,52 @@
+
+
+.fixed{
+    position: fixed;
+    width: 100%;
+}
+
+.wrap-content{
+    height: 100vh;
+    background-image: url('../images/bgimage.png');
+    background-size: cover;
+    z-index:-2;
+}
+
+.img-cover{
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);                                                                 
+   z-index:-1;
+}
+
+.wrap-content .wrap-title{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);                                                                   
+     font-size:3rem;
+     color: white;
+     text-align: center;
+     
+}
+
+.wrap-content .wrap-text-title{
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    padding: 40px;
+    margin-bottom:20px; 
+}
+
+.wrap-content .wrap-title .title1{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;
+}
+
+.wrap-content .wrap-title .nunucast{
+    font-family: 'Racing Sans One', cursive;
+}
+
+.wrap-btn-title ul li button{
+    width:100%;
+    font-size: 1.2rem;
+}
