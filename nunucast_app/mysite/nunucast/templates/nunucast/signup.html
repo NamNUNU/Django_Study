@@ -1,0 +1,13 @@
+
+    <div class="img-cover"></div> 
+    <div>
+        <div class="wrap-signup">
+                <form method="post" action="">                                                        
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-info" type="submit">회원가입</button>
+                </form>
+        </div>
+    </div>
+    
+    

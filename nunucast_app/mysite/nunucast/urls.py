@@ -6,5 +6,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', nunucast_views.IndexView.as_view(), name='index'),
-    url(r'^login/$', nunucast_views.LoginView.as_view(), name='login'),
+    url(r'^signup$', nunucast_views.SignUpView.as_view(), name='signup'),
 ]
