@@ -1,4 +1,4 @@
-var login = document.querySelector("#login");
+var signUpBtn = document.querySelector("#signup");
 
 function signup(){
     var template = this.responseText;
@@ -6,7 +6,7 @@ function signup(){
     document.querySelector('.wrap-content').innerHTML = template;
 }
 
-login.addEventListener("click", function(){
+signUpBtn.addEventListener("click", function(){
     console.log("hello");
     sendAjax("POST", "http://localhost:8000/nunucast/signup", null, "application/json", signup);
 })

@@ -77,3 +77,50 @@
     animation-name: fadeIn;
 }
 
+
+.wrap-content .wrap-signup{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size:1rem;
+    color: black;
+    background-color: white; 
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 40px;
+    animation-duration: 1.5s;
+    animation-name: fadeIn;
+    width: 30%;
+}
+
+.wrap-content .wrap-signup .nunucast-black{
+    font-family: 'Racing Sans One', cursive;
+    font-size:3rem;
+    margin-bottom: 20px;
+}
+
+.wrap-signup input{
+    background-color: white;
+    -webkit-appearance: none;
+    border: 1px solid #cccccc;
+    font-family: Arial;
+    margin-bottom: 20px;
+    padding: 8px 4px;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    border: 0px solid white;
+    border-bottom: 1px solid gray;
+}
+
+.wrap-signup input:focus{
+    border-bottom: 2px solid #fd4c88;
+    outline: none;
+}
+
+.wrap-signup input:focus::-webkit-input-placeholder {
+    transition: opacity 0.2s 0.2s ease;
+    opacity: 0;
+}

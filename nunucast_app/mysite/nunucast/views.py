@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
-from django.contrib.auth.forms import UserCreationForm
+from .forms import CreateUserForm
+#from django.contrib.auth.forms import UserCreationForm
 from django.template import loader, Context
 from django.views.generic import View
     
@@ -17,7 +18,7 @@ class IndexView(TemplateView):
 
 class SignUpView(View):
     def post(self, request):
-        form_class = UserCreationForm
+        form_class = CreateUserForm
         return HttpResponse(render(request, 'nunucast/signup.html', {"form":form_class}))
 
 
