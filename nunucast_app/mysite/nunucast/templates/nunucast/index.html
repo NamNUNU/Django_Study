@@ -11,12 +11,15 @@
                 </div>
                 <div class="wrap-btn-title">
                     <ul>
-                        <li><button class="btn btn-success" type="">Login</button></li>
-                        <li><button class="btn btn-info" type="">Sign Up</button></li>
+                        <li><button id="login" class="btn btn-success" type="">Login</button></li>
+                        <li><button id="signup" class="btn btn-info" type="">Sign Up</button></li>
                     </ul>
                 </div>
             </div>
                 
         </div>
     </div>
+    {% load staticfiles %}
+    <script src="{%static 'js/util.js'%}"></script>
+    <script src="{%static 'js/index.js'%}"></script>
 {% endblock %}

@@ -8,9 +8,12 @@ from django.views.generic.base import TemplateView
 
 
 
-def index(request):
-    return HttpResponse("<h1>hello everyone</h1>")
+def login(request):
+    if request.method == "POST":
+        return HttpResponse("<h1>hello everyone</h1>")
 
 class IndexView(TemplateView):
     template_name = 'nunucast/index.html'
+
+
     
