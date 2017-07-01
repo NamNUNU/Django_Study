@@ -124,3 +124,21 @@
     transition: opacity 0.2s 0.2s ease;
     opacity: 0;
 }
+
+.wrap-signup .errorlist{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #fd4c88;
+}
+
+
+.wrap-signup .signup-complete{
+    font-family: 'Racing Sans One', cursive;
+    font-size : 2.3rem;
+    margin-bottom: 20px;
+}
+
+.wrap-signup a{
+    color: green;
+    text-decoration: none;
+}
