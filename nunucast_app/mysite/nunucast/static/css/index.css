@@ -78,7 +78,7 @@
 }
 
 
-.wrap-content .wrap-signup{
+.wrap-content .wrap-account{
     position: absolute;
     top:50%;
     left:50%;
@@ -95,18 +95,18 @@
     width: 30%;
 }
 
-.wrap-content .wrap-signup .nunucast-black{
+.wrap-content .wrap-account .nunucast-black{
     font-family: 'Racing Sans One', cursive;
     font-size:3rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.wrap-signup input{
+.wrap-account input{
     background-color: white;
     -webkit-appearance: none;
     border: 1px solid #cccccc;
     font-family: Arial;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 8px 4px;
     position: relative;
     width: 100%;
@@ -115,48 +115,44 @@
     border-bottom: 1px solid gray;
 }
 
-.wrap-signup input:focus{
+.wrap-account input:focus{
     border-bottom: 2px solid #fd4c88;
     outline: none;
 }
 
-.wrap-signup input:focus::-webkit-input-placeholder {
+.wrap-account input:focus::-webkit-input-placeholder {
     transition: opacity 0.2s 0.2s ease;
     opacity: 0;
 }
 
-.wrap-signup .errorlist{
+.wrap-account .errorlist{
     font-size: 0.8rem;
     margin-bottom: 10px;
     color: #fd4c88;
 }
 
 
-.wrap-signup .signup-complete{
+.wrap-account .signup-complete{
     font-family: 'Racing Sans One', cursive;
     font-size : 2.3rem;
     margin-bottom: 20px;
 }
 
-.wrap-signup a{
+.wrap-account a{
     color: green;
     text-decoration: none;
 }
 
-.wrap-content .wrap-login{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);                                                                   
-    font-size:1rem;
-    color: black;
-    background-color: white; 
-    border: 1px solid white;
-    text-align: center;
-    border-radius: 5px;
-    padding: 20px 40px;
-    animation-duration: 1.5s;
-    animation-name: fadeIn;
-    width: 30%;
+.wrap-account p{
+    text-align: left;
 }
 
+.wrap-account .goodbye{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.wrap-account .relogin{
+    text-align: center;
+}
