@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from nunucast import views as nunucast_views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^/', include('nunucast.urls')),
     url(r'^nunucast/', include('nunucast.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/signup$', nunucast_views.SignUpView.as_view(), name='signup'),
+    url(r'^accounts/signup/done$', nunucast_views.RegisteredView.as_view(), name='create_user_done'),
 ]

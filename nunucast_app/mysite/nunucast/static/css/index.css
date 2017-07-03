@@ -142,3 +142,21 @@
     color: green;
     text-decoration: none;
 }
+
+.wrap-content .wrap-login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size:1rem;
+    color: black;
+    background-color: white; 
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 40px;
+    animation-duration: 1.5s;
+    animation-name: fadeIn;
+    width: 30%;
+}
+

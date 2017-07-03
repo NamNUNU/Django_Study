@@ -7,7 +7,5 @@ function signup(){
 }
 
 signUpBtn.addEventListener("click", function(){
-    console.log("hello");
-    location.href = "http://localhost:8000/nunucast/signup";
-    // sendAjax("POST", "http://localhost:8000/nunucast/signup", null, "application/json", signup);
+    location.href = "http://localhost:8000/accounts/signup";
 })

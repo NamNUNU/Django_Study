@@ -7,10 +7,9 @@ from django.views.generic.base import TemplateView
 from .forms import CreateUserForm
 from django.views.generic.edit import CreateView
 from django.core.urlresolvers import reverse_lazy
-#from django.contrib.auth.forms import UserCreationForm
 from django.template import loader, Context
 from django.views.generic import View
-    
+
 # Create your views here.
 
 
